@@ -22,3 +22,20 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+.controller("controlador1", function($scope,$rootScope){
+$rootScope.nombre = "jonassssss"
+$scope.var =""
+$scope.nuevo="controlador1"
+$scope.patitos=["patito1","super pato","jhon"]
+$scope.alfred = function (){
+  $scope.egresado = "siiiiiiiiiiii o noooooo??"
+}
+})
+.controller("controlador2", function($scope,$rootScope){
+  $scope.control2="hola controlador2"
+  $scope.nuevo = $rootScope.nombre
+  $scope.prueba = "nuevoooooo"
+  $scope.todo = function(){
+    return $scope.control2 + " " + $scope.prueba
+  }
+})
